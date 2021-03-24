@@ -16,4 +16,12 @@ GPA:3.47
 ### 项目经历
 
 ### 其他
+```javascript
+$(document).ready(function () {
+    alert('我的简历');
+});
+```
+[baidu][1]
+
+[1]: https://www.baidu.com/
 
