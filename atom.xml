@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-26T06:54:58.343Z</updated>
+  <updated>2021-03-27T03:16:02.340Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>选择排序</title>
+    <link href="http://example.com/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"/>
+    <id>http://example.com/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</id>
+    <published>2021-03-27T02:56:27.000Z</published>
+    <updated>2021-03-27T03:16:02.340Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="常用排序算法之选择排序"><a href="#常用排序算法之选择排序" class="headerlink" title="常用排序算法之选择排序"></a>常用排序算法之选择排序</h3><hr><ul><li>算法思路:找到数组里最小的元素将它与数组中的第一个元素进行交换，其次在剩下的无序数组中找到最小的元素，将它与数组中第二个元素交换，如此往复，直至数组排序</li></ul><h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectSort</span><span class="params">(<span class="keyword">int</span> arr[])</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> tmp;</span><br><span class="line">        <span class="comment">//从无序区间不断挑选出最小值，挑选n-1次</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length-<span class="number">1</span>;i++)&#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">int</span> minIndex=i;<span class="comment">//i下标 从0，1,2</span></span><br><span class="line">            <span class="comment">//找出最小值，并交换</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;arr.length;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(arr[j]&lt;arr[minIndex])&#123;</span><br><span class="line">                    minIndex=j;<span class="comment">//更新最小值下标</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//交换最小值和每次无序区间的第一个元素</span></span><br><span class="line">           tmp=arr[i];</span><br><span class="line">            arr[i]=arr[minIndex];</span><br><span class="line">            arr[minIndex]=tmp;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h5 id="时间复杂度：O-n-2-，空间复杂度：O-1-，不稳定的排序"><a href="#时间复杂度：O-n-2-，空间复杂度：O-1-，不稳定的排序" class="headerlink" title="时间复杂度：O(n^2) ，空间复杂度：O(1) ，不稳定的排序"></a>时间复杂度：O(n^2) ，空间复杂度：O(1) ，不稳定的排序</h5>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;常用排序算法之选择排序&quot;&gt;&lt;a href=&quot;#常用排序算法之选择排序&quot; class=&quot;headerlink&quot; title=&quot;常用排序算法之选择排序&quot;&gt;&lt;/a&gt;常用排序算法之选择排序&lt;/h3&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;算法思路:找到数组里最小的元素将它与数组中的第</summary>
+      
+    
+    
+    
+    <category term="算法分析" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>排序算法</title>
-    <link href="http://example.com/2021/03/25/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
-    <id>http://example.com/2021/03/25/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</id>
+    <link href="http://example.com/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
+    <id>http://example.com/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</id>
     <published>2021-03-25T00:34:55.000Z</published>
-    <updated>2021-03-26T06:54:58.343Z</updated>
+    <updated>2021-03-27T03:16:41.958Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="常用排序算法"><a href="#常用排序算法" class="headerlink" title="常用排序算法"></a>常用排序算法</h3><h4 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h4><ul><li><p>算法思路:把未排序的元素一个一个地插入到有序的集合中，将有序集和从后向前扫描一遍，找到合适的位置插入</p></li><li><p>代码实现:把待插元素存起来，然后逐个与有序集合中的元素进行比较，如果集合里的元素大于待插元素，就将它向后移一个位置，这样当遇到有序集合小于等于待插元素就有地方放待插元素了</p></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n;i++)</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j=i-<span class="number">1</span>;j&gt;=<span class="number">0</span>;j--)&#123;</span><br><span class="line">        insert=arr[i];</span><br><span class="line">        <span class="keyword">if</span>(insert&gt;arr[j])&#123;</span><br><span class="line">            insert=arr[j+<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            arr[j]=arr[j+<span class="number">1</span>]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h3 id="常用排序算法之直接插入排序"><a href="#常用排序算法之直接插入排序" class="headerlink" title="常用排序算法之直接插入排序"></a>常用排序算法之直接插入排序</h3><hr><ul><li><p>算法思路:把未排序的元素一个一个地插入到有序的集合中，将有序集和从后向前扫描一遍，找到合适的位置插入</p></li><li><p>代码实现:把待插元素存起来，然后逐个与有序集合中的元素进行比较，如果集合里的元素大于待插元素，就将它向后移一个位置，这样当遇到有序集合小于等于待插元素就有地方放待插元素了</p></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n;i++)&#123;</span><br><span class="line">     insert=arr[i];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j=i-<span class="number">1</span>;j&gt;=<span class="number">0</span>;j--)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[j&gt;insert)&#123;</span><br><span class="line">            arr[j+<span class="number">1</span>]=arr[j];</span><br><span class="line">        &#125;</span><br><span class="line">            arr[j+<span class="number">1</span>]=insert;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">  </span><br></pre></td></tr></table></figure><h5 id="时间复杂度：O-n-2-空间复杂度：O-1-算法稳定"><a href="#时间复杂度：O-n-2-空间复杂度：O-1-算法稳定" class="headerlink" title="时间复杂度：O(n^2),空间复杂度：O(1),算法稳定"></a>时间复杂度：O(n^2),空间复杂度：O(1),算法稳定</h5>]]></content>
     
     
       
       
-    <summary type="html">&lt;h3 id=&quot;常用排序算法&quot;&gt;&lt;a href=&quot;#常用排序算法&quot; class=&quot;headerlink&quot; title=&quot;常用排序算法&quot;&gt;&lt;/a&gt;常用排序算法&lt;/h3&gt;&lt;h4 id=&quot;直接插入排序&quot;&gt;&lt;a href=&quot;#直接插入排序&quot; class=&quot;headerlink&quot; titl</summary>
+    <summary type="html">&lt;h3 id=&quot;常用排序算法之直接插入排序&quot;&gt;&lt;a href=&quot;#常用排序算法之直接插入排序&quot; class=&quot;headerlink&quot; title=&quot;常用排序算法之直接插入排序&quot;&gt;&lt;/a&gt;常用排序算法之直接插入排序&lt;/h3&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;算法思路:把未排序的元素</summary>
       
     
     
@@ -40,8 +66,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2021/03/24/hello-world/"/>
-    <id>http://example.com/2021/03/24/hello-world/</id>
+    <link href="http://example.com/uncategorized/hello-world/"/>
+    <id>http://example.com/uncategorized/hello-world/</id>
     <published>2021-03-24T11:30:08.716Z</published>
     <updated>2021-03-24T11:30:08.716Z</updated>
     
