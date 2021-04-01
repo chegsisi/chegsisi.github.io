@@ -92,7 +92,7 @@ width:300px;position:fixed;opacity:1;transition:all .2s ease-in;height:100%;z-in
 @media screen and (max-width:800px)
 {#container,body,html{height:auto;overflow-x:hidden;overflow-y:auto}
 #mobile-nav{display:block}
-.body-wrap{margin-bottom:0} .left-col{display:none}.left-col,.mymenucontainer {display:none}
+.body-wrap{margin-bottom:0} .left-col,.mymenucontainer{display:none}
 .mid-col{left:0}
 #header .header-nav,.mid-col{position:relative}
 .wrap-side-operation{display:none}
