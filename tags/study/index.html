@@ -56,6 +56,11 @@
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
+	      <div class="mymenucontainer" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
    <div class="left-col" q-class="show:isShow"  style="background: url(/img/rosa-03.jpg) no-repeat 100%;background-size:cover;opacity:0.9;filter:alpha(opacity=90);">
       
 
@@ -755,6 +760,30 @@
     });
   </script>
   
+  <script>
+    var hide = false;
+    function myFunction(x) {
+        x.classList.toggle("change");
+        if(hide == false){
+            $(".left-col").css('display', 'none');
+            $(".mid-col").css("left", 6);
+            $(".tools-col").css('display', 'none');
+            $(".tools-col.hide").css('display', 'none');
+            hide = true;
+
+            $(".mymenucontainer").css('left', '0');
+
+        }else{
+            $(".left-col").css('display', '');
+            $(".mid-col").css("left", 300);
+            $(".tools-col").css('display', '');
+            $(".tools-col.hide").css('display', '');
+            hide = false;
+
+            $(".mymenucontainer").css('left', '260px');
+        }
+    }
+</script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
