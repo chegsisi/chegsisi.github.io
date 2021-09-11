@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>排序算法</title>
+    <url>/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="常用排序算法之直接插入排序"><a href="#常用排序算法之直接插入排序" class="headerlink" title="常用排序算法之直接插入排序"></a>常用排序算法之直接插入排序</h3><hr>
+<ul>
+<li><p>算法思路:把未排序的元素一个一个地插入到有序的集合中，将有序集和从后向前扫描一遍，找到合适的位置插入</p>
+</li>
+<li><p>代码实现:把待插元素存起来，然后逐个与有序集合中的元素进行比较，如果集合里的元素大于待插元素，就将它向后移一个位置，这样当遇到有序集合小于等于待插元素就有地方放待插元素了</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n;i++)&#123;</span><br><span class="line">     insert=arr[i];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j=i-<span class="number">1</span>;j&gt;=<span class="number">0</span>;j--)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[j&gt;insert)&#123;</span><br><span class="line">            arr[j+<span class="number">1</span>]=arr[j];</span><br><span class="line">        &#125;</span><br><span class="line">            arr[j+<span class="number">1</span>]=insert;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+
+<h5 id="时间复杂度：O-n-2-空间复杂度：O-1-算法稳定"><a href="#时间复杂度：O-n-2-空间复杂度：O-1-算法稳定" class="headerlink" title="时间复杂度：O(n^2),空间复杂度：O(1),算法稳定"></a>时间复杂度：O(n^2),空间复杂度：O(1),算法稳定</h5>]]></content>
+      <categories>
+        <category>算法分析</category>
+      </categories>
+      <tags>
+        <tag>study</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>什么是BFC</title>
     <url>/css/%E4%BB%80%E4%B9%88%E6%98%AFBFC/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h5 id="什么是BFC"><a href="#什么是BFC" class="headerlink" title="什么是BFC"></a>什么是BFC</h5><hr>
@@ -41,26 +61,6 @@
       </categories>
       <tags>
         <tag>css布局</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>排序算法</title>
-    <url>/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="常用排序算法之直接插入排序"><a href="#常用排序算法之直接插入排序" class="headerlink" title="常用排序算法之直接插入排序"></a>常用排序算法之直接插入排序</h3><hr>
-<ul>
-<li><p>算法思路:把未排序的元素一个一个地插入到有序的集合中，将有序集和从后向前扫描一遍，找到合适的位置插入</p>
-</li>
-<li><p>代码实现:把待插元素存起来，然后逐个与有序集合中的元素进行比较，如果集合里的元素大于待插元素，就将它向后移一个位置，这样当遇到有序集合小于等于待插元素就有地方放待插元素了</p>
-</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n;i++)&#123;</span><br><span class="line">     insert=arr[i];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j=i-<span class="number">1</span>;j&gt;=<span class="number">0</span>;j--)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[j&gt;insert)&#123;</span><br><span class="line">            arr[j+<span class="number">1</span>]=arr[j];</span><br><span class="line">        &#125;</span><br><span class="line">            arr[j+<span class="number">1</span>]=insert;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
-
-<h5 id="时间复杂度：O-n-2-空间复杂度：O-1-算法稳定"><a href="#时间复杂度：O-n-2-空间复杂度：O-1-算法稳定" class="headerlink" title="时间复杂度：O(n^2),空间复杂度：O(1),算法稳定"></a>时间复杂度：O(n^2),空间复杂度：O(1),算法稳定</h5>]]></content>
-      <categories>
-        <category>算法分析</category>
-      </categories>
-      <tags>
-        <tag>study</tag>
       </tags>
   </entry>
   <entry>
