@@ -1,22 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/uncategorized/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>什么是BFC</title>
+    <url>/css/%E4%BB%80%E4%B9%88%E6%98%AFBFC/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h5 id="什么是BFC"><a href="#什么是BFC" class="headerlink" title="什么是BFC"></a>什么是BFC</h5><hr>
+<ol>
+<li><p>定义</p>
+<p>BFC是一个独立的布局环境，BFC内部的元素布局与外部互不影响，可以通过添加一些条件触发BFC，从而解决布局上的一些问题（比如上下margin重叠问题、父元素高度塌陷问题、浮动元素重叠问题）</p>
+</li>
+<li><p>特性</p>
+<ul>
+<li><strong>属于同一个BFC的两个相邻容器的上下margin会重叠</strong></li>
+<li><strong>计算BFC高度时浮动元素也参与计算</strong></li>
+<li><strong>BFC的区域不会与浮动容器发生重叠</strong></li>
+<li>BFC的容器在垂直方向上依次排列</li>
+<li>BFC是独立容器，内部元素不会影响外部元素</li>
+<li>元素的margin-left与其包含块的border-left相接触</li>
+</ul>
+</li>
+<li><p>触发条件</p>
+<ul>
+<li>根元素</li>
+<li>overflow:hidden</li>
+<li>float的值非none</li>
+<li>display值为inline-block、tabel-cell、table-caption、flex、inline-flex</li>
+<li>position值为绝对定位或固定定位</li>
+</ul>
+</li>
+<li><p>作用</p>
+<ul>
+<li><strong>解决上下margin重叠问题</strong>，包裹一个父元素，设置overflow:hidden触发BFC,使其处于不同的BFC就不会发生重叠问题</li>
+<li><strong>解决高度塌陷问题</strong>，父元素设置overflow:hidden,触发BFC，浮动元素的高度也会被计算到父元素内</li>
+<li><strong>实现多栏布局</strong>（两栏、三栏、圣杯、双飞翼），设置overflow:hidden，触发BFC不会与浮动元素发生重叠</li>
+</ul>
+</li>
+</ol>
 ]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css布局</tag>
+      </tags>
   </entry>
   <entry>
     <title>排序算法</title>
